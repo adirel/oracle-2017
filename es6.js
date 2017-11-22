@@ -36,6 +36,13 @@ class Person{
     constructor(firstName = 'Yariv', lastName = 'Katz') {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = 0;
+    }
+
+    birthday() {
+        setTimeout(() => {
+            this.age++
+        }, 1000)
     }
 }
 
@@ -60,9 +67,31 @@ class Student extends Person {
 
 arg1 => {console.log('sdfas')}
 
+
+// now i will decide what is this!
+// this will equal window
+arg1 => 10
+
+this === window
+
 function sayHello(){
     console.log(this);
 }
+
+// what is this?
+// to whom does say hello belong to
+// this is window
+// sending window as this to sayhello
+sayHello()
+
+// what is this?
+// to whom does say hello belong to
+// this == {a: sayHello}
+// sending this
+{a : sayHello}
+
+
+
 
 
 () => {
@@ -71,10 +100,27 @@ function sayHello(){
 
 
 const myDict1 = {'a': sayHello}
+
+// this == window
 const myDict2 = {'a': () => {console.log(this)}}
 
 myDict1['a']();
 myDict2['a']();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
