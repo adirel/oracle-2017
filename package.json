@@ -18,7 +18,10 @@
   "homepage": "https://github.com/ywarezk/oracle-2017#readme",
   "dependencies": {
     "babel-standalone": "^6.26.0",
+    "bootstrap": "^3.3.7",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   }
 }
